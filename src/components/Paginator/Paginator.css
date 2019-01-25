@@ -1,0 +1,47 @@
+.paginator__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.paginator__control {
+  width: 5rem;
+  padding: 0.25rem 0;
+  margin: 0 1rem;
+  border: 1px solid #3b0062;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #3b0062;
+}
+.paginator__control.new {
+  display: flex;
+  justify-content: center;
+  width: 8rem;
+}
+
+.paginator__control:hover,
+.paginator__control:active {
+  color: #fab83f;
+  border-color: #fab83f;
+}
+
+.paginator__control:active .new-post-notification,
+.paginator__control:hover .new-post-notification {
+  background: #fab83f;
+}
+
+.paginator__control:focus {
+  outline: none;
+}
+.new-post-notification {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #3b0062;
+  border-radius: 25%;
+  color: #ffffff;
+}
